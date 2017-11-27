@@ -13,13 +13,15 @@
     "On a floured surface, roll out dough to 1 cm thick and cut into shapes using biscuit cutters.",
     "Place on prepared tray and bake 25 – 30 minutes, until shortbread is pale but crisp. Cool on a wire rack and store in an airtight container."
   ],
-  "keywords": [
-    "cookies",
-    "christmas"
-  ],
-  "season": "winter",
-  "guests": [],
-  "wine": []
+  "metadata": {
+    "keywords": [
+      "cookies",
+      "christmas"
+    ],
+    "seasons": ["winter"],
+    "guests": [],
+    "wine": []
+  }
 }
 
 

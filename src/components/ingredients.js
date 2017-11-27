@@ -5,7 +5,7 @@ export const Ingredients = ({ingredients}) => {
     <div>
       <h2>Ingredients</h2>
       <ul>
-        {ingredients.map((item) => <li>{item}</li>)}
+        {ingredients.map((item, index) => <li key={`ingredient-${index}`}>{item}</li>)}
       </ul>
     </div>
   )
