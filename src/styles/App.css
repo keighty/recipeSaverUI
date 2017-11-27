@@ -1,0 +1,11 @@
+.RecipeSaver-recipe {
+  display: flex;
+}
+
+.RecipeSaver-recipe-body {
+  width: 60%;
+}
+
+.RecipeSaver-recipe-metadata {
+  width: 30%;
+}
