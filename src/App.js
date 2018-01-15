@@ -5,18 +5,14 @@ import './styles/App.css'
 import { ShowRecipe } from './components/show-recipe'
 import { Index } from './components/index'
 
-const recipe1 = require('./fixtures/test-recipe-1.json')
-const recipe2 = require('./fixtures/test-recipe-2.json')
+import recipes from './fixtures'
 
 class App extends Component {
   constructor (props, context) {
     super(props, context)
 
     this.state = {
-      recipeData: {
-        1234: recipe1,
-        5467: recipe2,
-      }
+      recipeData: recipes
     }
   }
 
