@@ -1,32 +1,23 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react'
 
 import { Ingredients } from './ingredients'
 import { Directions } from './directions'
 import { Metadata } from './metadata'
 
-import testRecipe from '../fixtures/test-recipe-2.json'
 
-export class ShowRecipe extends Component {
-  static propTypes = {
-    match: PropTypes.object.isRequired,
-  }
+export const ShowRecipe = ({match, recipeData}) => {
+  const recipeId = match.params.recipeId
+  const { ingredients, directions, metadata } = recipeData[recipeId]
 
-  render() {
-    const { match } = this.props
-    const recipeId = match.params.recipeId
-
-    const { ingredients, directions, metadata } = testRecipe
-    return (
-      <div className='row'>
-        <div className='eight columns'>
-          <Ingredients ingredients={ingredients} />
-          <Directions directions={directions} />
-        </div>
-        <div className='four columns'>
-          <Metadata metadata={metadata} />
-        </div>
+  return (
+    <div className='row'>
+      <div className='eight columns'>
+        <Ingredients ingredients={ingredients} />
+        <Directions directions={directions} />
       </div>
-    )
-  }
+      <div className='four columns'>
+        <Metadata metadata={metadata} />
+      </div>
+    </div>
+  )
 }
