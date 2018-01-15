@@ -1,5 +1,5 @@
 {
-  "recipeId": "1234",
+  "id": 1234,
   "name": "Mum's Shortbread",
   "ingredients": [
     "250g butter, softened",
@@ -9,7 +9,7 @@
   ],
   "directions": [
     "Preheat oven to 300°F bake. Grease oven tray or line with baking paper.",
-    "Beat butter and Chelsea Icing Sugar until pale and fluffy. Mix in cornflour and flour until the mixture comes together and forms a dough.",
+    "Beat butter and Icing Sugar until pale and fluffy. Mix in cornflour and flour until the mixture comes together and forms a dough.",
     "On a floured surface, roll out dough to 1 cm thick and cut into shapes using biscuit cutters.",
     "Place on prepared tray and bake 25 – 30 minutes, until shortbread is pale but crisp. Cool on a wire rack and store in an airtight container."
   ],
@@ -20,7 +20,8 @@
     ],
     "seasons": ["winter"],
     "guests": [],
-    "wine": []
+    "wine": [],
+    "source": ["Mom"]
   }
 }
 

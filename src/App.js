@@ -1,25 +1,17 @@
 import React, { Component } from 'react'
-import './styles/App.css'
+import { Switch, Route } from 'react-router-dom'
 
-import { Ingredients } from './components/ingredients'
-import { Directions } from './components/directions'
-import { Metadata } from './components/metadata'
-import testRecipe from './fixtures/test-recipe-1.json'
+import './styles/App.css'
+import { ShowRecipe } from './components/show-recipe'
+import Index from './components/index'
 
 class App extends Component {
   render() {
-    const {ingredients, directions, metadata} = testRecipe
-
     return (
-      <div className='row'>
-        <div className='eight columns'>
-          <Ingredients ingredients={ingredients} />
-          <Directions directions={directions} />
-        </div>
-        <div className='four columns'>
-          <Metadata metadata={metadata} />
-        </div>
-      </div>
+      <Switch>
+        <Route exact path='/' component={Index} />
+        <Route path='/recipe/:recipeId' component={ShowRecipe} />
+      </Switch>
     )
   }
 }
