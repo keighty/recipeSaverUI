@@ -19,7 +19,21 @@ class App extends Component {
 
   renderComponentWithData (Component) {
     const { recipeData } = this.state
-    return (props) => <Component {...props} recipeData={recipeData} />
+
+    return (props) => {
+      return (
+        <div>
+          <div className='nav-container no-select fixed-top u-full-width'>
+            <ul className='inline-list hover-links nav-list six columns'>
+              <li><a href="/recipes" className='text-lg'>Recipe saver</a></li>
+            </ul>
+          </div>
+          <div className='container RecipeSaver-body'>
+            <Component {...props} recipeData={recipeData} />
+          </div>
+        </div>
+      )
+    }
   }
 
   render() {
